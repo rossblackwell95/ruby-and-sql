@@ -14,8 +14,6 @@ Company.destroy_all
 # 1a. check out the schema file
 # 1b. check out the model file
 
-
-
 # 2. insert new rows in companies table
 
 new_company = Company.new
