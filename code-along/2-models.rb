@@ -70,3 +70,10 @@ puts amazon.inspect
 amazon.save
 
 # 7. delete a row
+meta = Company.find_by({ "name" => "Meta" })
+# puts meta.inspect
+meta.destroy
+
+california_companies = Company.where({ "state" => "CA" })
+# puts california_companies.inspect
+puts "California companies: #{california_companies.count}"
